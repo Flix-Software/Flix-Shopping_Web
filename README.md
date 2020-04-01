@@ -1,2 +1,2 @@
-# Flix-Shopping_Web
+# Flix_Shopping_Web
 Shopping web application
