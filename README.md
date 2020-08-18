@@ -1,2 +1,3 @@
 # Flix_Shopping_Web
-Shopping web application
+
+Web Application for watch store using Joomla CMS approach
