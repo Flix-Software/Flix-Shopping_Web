@@ -1,0 +1,12 @@
+To update a component from version 3.1 to version 4.1, you must have sql files for each intermediate version.
+
+The Right Example
+3.1.0.sql -> 3.2.0.sql -> 3.3.0.sql -> 4.0.0.sql -> 4.1.0.sql
+
+Wrong example
+3.1.0.sql -> 3.4.0.sql -> 4.1.0.sql
+In this example, you must have files for versions 3.2.0, 3.3.0, 4.0.0
+
+Joomla Documentation: https://docs.joomla.org/J2.5:Managing_Component_Updates_(Update_SQL_files)
+
+Для обновления с версии 3.1 до версии 4.1 у вас должны быть файлы для каждой промежуточной версии.

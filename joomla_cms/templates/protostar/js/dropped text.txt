@@ -1,0 +1,59 @@
+Skip to Main Content Control Panel
+System
+Users
+Menus
+Content
+Components
+Extensions
+Help
+ User Menu
+דלתות בר אילן...	
+דלתות בר אילן - אתר הבית
+ Articles: Edit
+Main content begins here
+ Save   Save & Close   Save & New   Save as Copy  Versions   Close  Help
+×
+Message
+
+Article successfully saved.
+Title *   
+test
+ Alias   
+test
+Content
+Images and Links
+Options
+Publishing
+Configure Edit Screen
+Permissions
+
+[Toggle Editor]
+
+<p>galery 10</p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; text-align: center; background-color: #b6c0d0;">{os-gal-10}</span></p>
+<p>&nbsp;</p>
+<p>galery 1</p>
+<p><span style="color: #333333; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; text-align: center; background-color: #d5dbe4;">{os-gal-1}</span></p>
+ Edit in Themler   Tabs   Article   Module   Article   Image   Page Break   Read More
+
+Status
+Published
+
+Category *
+- גלריה
+
+Featured
+Yes  No
+Access
+Public
+
+Language
+All
+
+Tags
+
+Type or select some options
+Version Note
+
+Joomla! 3.6.5	 —  © 2017 דלתות בר אילן - אתר הבית
+View Site0Visitors1Administrator0MessagesLog out

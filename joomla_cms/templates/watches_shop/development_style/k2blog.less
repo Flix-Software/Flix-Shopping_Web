@@ -1,0 +1,114 @@
+#k2Container{
+    a.modal {
+        display: block;
+        position: static;
+        img {
+            border: none;
+            padding: 0;
+        }
+    }
+    .itemContainer {
+        margin-bottom: 20px;
+        .border(1px @colorBorder);
+        background: @BgBox;
+        padding: 10px;
+        .catItemImage img{
+            border: none;
+            padding: 0;
+        }
+    }
+}
+div.latestItemView {
+    background: @BgBox;
+    .border(1px @colorBorder);
+    padding: 10px;
+    margin-bottom: 15px;
+    .latestItemImageBlock {
+            float: none;
+    }
+}
+div.userItemView {
+    background: @BgBox;
+    .border(1px @colorBorder);
+    padding: 10px;
+    margin-bottom: 15px;
+    .userItemImageBlock {
+        @media (max-width: 480px){
+            float: none;
+        }
+    }
+}
+div.tagItemView {
+    background: @BgBox;
+    .border(1px @colorBorder);
+    padding: 10px;
+    div.tagItemImageBlock {
+        @media (max-width: 480px){
+            float: none;
+        }
+    }
+}
+div.k2TagCloudBlock {
+    a {
+        .border(1px @colorBorder);
+        background: @BgBox;
+        margin: 0 0 5px 5px;
+        &:hover{
+        background: #ccc;
+        color: #fff;
+        }
+    } 
+} 
+div.itemComments {
+    background: @BgBox;
+    .border(1px @colorBorder);
+    div.itemCommentsForm {
+         form {
+       
+            textarea.inputbox {
+                .border(1px @colorBorder);
+                padding: 5px;
+                color: @textColor;
+                @media (max-width: 480px){
+                    width: 100%;
+                }
+            }
+            input.inputbox {
+                @media (max-width: 480px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+div.itemAuthorBlock {
+    background: @BgBox;
+    .border(1px @colorBorder);
+}
+.k2LatestCommentsBlock{
+    ul {
+        li{
+            margin-bottom: 10px;
+            .border(1px @colorBorder);
+            padding: 5px;
+            span {
+                display: block;
+                margin-bottom: 5px; 
+            }
+        }
+    }
+}
+div.userBlock {
+    background: #fff;
+}
+.moduletable_modK2 {
+    .border(1px @colorBorder);
+    background: @BgBox;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+
+div.itemBackToTop{
+    margin-top: 10px;
+}

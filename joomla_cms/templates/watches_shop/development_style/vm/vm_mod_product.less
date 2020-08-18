@@ -1,0 +1,195 @@
+.moduletable_vmcategories {
+    background: @colorWhite;
+    .border (1px @colorBorder);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    
+    ul.VMmenu{
+        padding: 0;
+        margin-bottom: 30px;
+        @media (max-width: 767px){
+            text-align: center;
+         }
+        li{
+            padding: 0;
+            line-height: 30px;
+            a{
+                font-size: 18px;
+                line-height: 20px;
+                .transition;
+                &:hover{
+                    .transition;
+                }
+            }
+        }
+    }
+}
+.vmgroup{
+    margin-top: 30px;
+
+    .width33{
+
+        .row_set(3, 32.5%);
+        margin-bottom: 10px;
+
+        @media (max-width: 992px) {
+            .row_set(2, 49.5%);
+        }
+    }
+
+
+    @media (max-width: 490px) {
+
+        .floatleft{
+        float: none;
+        width: 100%;
+        margin-right: 0px;
+        margin-left: 0px;
+        }
+
+    }
+
+
+    .spacer{
+        // border-bottom: 1px solid @colorGray;
+        // margin-bottom: 20px;
+        // padding-bottom: 10px;
+
+        // &:extend(.moduletable_popular_prod .spacer all);
+  
+    }
+
+        .vm_prod_image{
+        position: relative;
+        overflow: hidden;
+
+        .productdetails{
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        .transition;
+        }
+
+        &:hover{
+
+            .productdetails{
+                bottom: 0;
+            }
+
+        }
+
+    }
+
+    // a{
+    //     &:extend(.moduletable_popular_prod a);
+    // }
+
+    a{
+        text-align: center;
+        display: block;
+    }
+
+
+
+
+    .PricecostPrice{
+        margin-top: 10px;
+        .PricecostPrice{
+            text-decoration: line-through;
+            color:@colorNotPrice;
+            font-size: 22px;
+            line-height: 22px;
+        }
+    }
+    .PricesalesPrice{
+        .PricesalesPrice{
+            font-size: 18px;
+            line-height: 30px;
+            color:@colorPrice;
+        }
+    }
+    div.addtocart-area{
+        margin: 8px 0 ;
+    }
+    .addtocart-area{
+        .addtocart-bar{
+            margin: 0;
+            .quantity-controls{
+                .quantity-plus, .quantity-minus{
+                    height: 14px;
+                    .border(0);
+                    width: 14px;
+                    cursor: pointer;
+                }
+                .quantity-plus{
+                    background: url('../images/quan.png') no-repeat 0 0;
+                    margin:  0;
+                }
+                .quantity-minus{
+                    background: url('../images/quan.png') no-repeat 54% 0;
+                }
+            }
+            .quantity-box{
+                input{
+                    color:@colorPrice; 
+                    font-size: 20px;
+                    background: transparent;
+                    .border(0);
+                    .box-shadow(none);
+                }
+            }
+  
+        }
+
+        .vm-customfields-wrap{
+            display: none;
+        }
+
+        .product-fields{
+            margin-top: 10px;
+            strong{
+                font-size: 20px;
+                font-weight: normal;
+                color:@mainColor; 
+            }
+            .chzn-container{
+                width: 200px !important;
+                height: 30px;
+                @media (max-width: 1200px){
+                    width: 85% !important;
+                }
+            }
+            .product-field-display{
+                a.chzn-single{
+                    background:transparent; 
+                    padding: 3px 0;
+                    height: 30px;
+                    .box-shadow(none);
+                    .borderRadius(3px);
+                    .border(1px @colorNotPrice);
+                }
+                .chzn-drop{
+                    .border(1px @colorNotPrice);
+                    width: 200px !important;
+                    @media (max-width: 1200px){
+                        width: 100% !important;
+                    }
+                    ul.chzn-results{
+                        li.active-result.highlighted{
+                            background:@mainColor; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.product-container .product-price{
+    float: none;
+    text-align: center;
+}

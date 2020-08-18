@@ -1,0 +1,191 @@
+.product{
+    span.addtocart-button input.addtocart-button {
+
+    }
+    .vm-details-button a{
+        background-image: none;
+        
+        &:hover {
+            background-image: none;
+        }
+    }
+
+    .spacer.product-container{
+        border: none;
+        background-color: @colorSuperLigthGray;
+    }
+
+    .vm-product-media-container{
+       position: relative;
+        overflow: hidden;
+
+        a,
+        img{
+            display: block;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            max-height: 1000px;
+            .transition;
+        }
+
+
+        .addtocart-area{
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        .transition;
+        }
+
+        &:hover{
+
+            .addtocart-area{
+                bottom: 0;
+            }
+
+            img{
+                .transform;
+            }
+
+        }
+
+    }
+
+    h2{
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: none;
+    }
+
+    .vm-product-descr-container-1{
+        min-height: 0;
+    }
+
+    a{
+        display: block;
+        cursor: pointer;
+    }
+
+    .product-price>*{
+        display: inline-block;
+    }
+
+    .vm-price-desc{
+        display: none;
+    }
+
+
+
+    span.PricesalesPrice{
+        color: @mainColor;
+    }
+
+    span.PricebasePrice{
+        text-decoration: line-through;
+    }
+
+    .vm-price-value{
+        padding: 0 5px;
+
+    }
+
+    .vm-product-descr-container-1{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+    .featured-view , 
+    .latest-view ,
+    .topten-view , 
+    .recent-view ,
+    .related-products-view ,
+    .browse-view 
+    {
+
+
+    .row .product .spacer    span.PricesalesPrice,
+    .row .product .spacer span.PricebasePrice{
+    font-size: 16px;
+    }
+
+    .row .product .spacer span.PricesalesPrice{
+        color: @mainColor;
+    }
+
+    .row .product .spacer span.PricebasePrice{
+        color: #999;
+    }
+
+        .vm-col-3{
+            .row_set(3,32%);
+             margin-bottom: 13px;
+
+            .spacer{
+                margin: 0px;
+               
+            }
+
+             @media (max-width: 992px) {
+                .row_set(2, 49.5%);
+            }
+
+        }
+
+          @media (max-width: 490px) {
+                
+                .product.vm-col{
+                float: none;
+                width: 100%;
+                margin-right: 0px;
+                margin-left: 0px;
+                }
+                
+            }
+
+
+        h2
+        {
+        // font-size: 20px;
+        margin: 0 0 8px;
+        padding: 0;
+        }
+
+
+        h4 {
+        // font-size: 22px;
+        margin: 0 0 8px;
+        padding: 0;
+        }
+
+    }
+
+
+    .featured-view , 
+    .latest-view ,
+    .topten-view , 
+    .recent-view ,
+    .related-products-view ,
+    .browse-view ,
+    .category-wiev{
+
+        .horizontal-separator{
+        display: none;
+        margin: 0px;
+        }
+
+    }
+
+
+
+
+
+
+
+

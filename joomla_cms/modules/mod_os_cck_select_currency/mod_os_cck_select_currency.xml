@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+<name>OS CCK select currency</name> 
+<author>OrdaSoft - Andrey Kvasnevskiy</author> 
+<creationDate>August 2019</creationDate>
+<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+<copyright>(C) 2019 OrdaSoft, Andrey Kvasnevskiy</copyright>
+<authorEmail>Andrey Kvasnevskiy(akbet@mail.ru);Vladislav Prikhodko(vlados.vp1@gmail.com)</authorEmail>
+<authorUrl>www.ordasoft.com</authorUrl>
+<version>6.0.8</version>
+<description>Select currency to display from OS CCK.</description> 
+  <files> 
+    <filename module="mod_os_cck_select_currency">mod_os_cck_select_currency.xml</filename>
+    <filename module="mod_os_cck_select_currency">mod_os_cck_select_currency.php</filename>
+    <filename module="mod_os_cck_select_currency">index.html</filename>
+  </files> 
+  <config>
+  <fields name="params" >
+        <field name="ItemId" type="text" label="ItemId" description="You can enter here the menu ID, which will be displayed this layout">
+        </field>
+      <fieldset name="advanced">
+      <field name="moduleclass_sfx" type="textarea" rows="3"
+             label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+      </fieldset>
+  </fields>
+  </config>
+</extension>

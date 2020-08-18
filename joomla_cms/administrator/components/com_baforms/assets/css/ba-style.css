@@ -1,0 +1,517 @@
+/* Copyright @ Balbooa, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+    General and resets
+ ========================================================================== */
+
+@font-face {
+    font-family: 'IcoMoon';
+    src: url('../../../../../media/jui/fonts/IcoMoon.eot');
+    src: url('../../../../../media/jui/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'),
+    url('../../../../../media/jui/fonts/IcoMoon.woff') format('woff'),
+    url('../../../../../media/jui/fonts/IcoMoon.ttf') format('truetype'),
+    url('../../../../../media/jui/fonts/IcoMoon.svg#IcoMoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "../../../../../media/jui/less/icomoon.less";
+
+/* Form */
+.ba-form {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+form {
+    margin: 0 0 18px;
+}
+
+/* Inputs default styles */
+.ba-form input[type="email"], 
+.ba-form input[type="text"], 
+.ba-form select, 
+.ba-form select[size], 
+.ba-form textarea {
+    box-shadow: none;
+    box-sizing: border-box;
+    line-height: normal !important;
+    width: 100%;
+}
+
+.ba-form label {
+    display: block;
+    line-height: initial;
+}
+
+.ba-form span { 
+    display: initial !important;
+}
+
+/* jQuery UI styles reset */
+.ba-form .ui-widget * { 
+    outline: none !important;
+}
+
+.ba-form .ui-widget-header,
+.ba-form .ui-state-active,
+.ba-form .ui-state-default, 
+.ba-form .ui-widget-content,
+.ba-form .ui-widget-header {
+    background: #fff !important;
+    border: none !important;
+}
+
+/* ========================================================================
+    Tools
+ ========================================================================== */
+
+.ba-form .tool {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+ /* Slider */
+.ba-form .slider.tool .slider.slider-horizontal {
+    width: 100%;
+}
+
+.ba-form .slider {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.ba-form .slider.tool {
+    display: block;
+}
+
+.ba-form .slider-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    height: 15px;
+    margin-top: -15px;
+    position: absolute;
+    width: 100%;
+}
+
+.ba-form .slider.slider-horizontal .tooltip.top {
+    margin-top: -25px;
+}
+
+.ba-form .slider-selection {
+    background: #fff;
+    position: absolute;
+}
+
+/* Slider dots */
+.ba-form .slider-handle {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    height: 22px;
+    position: absolute;
+    width: 22px;
+    box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.1);
+        -moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.1);
+        -webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.ba-form .slider-horizontal .slider-handle {
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.ba-form .slider label {
+    float: left;
+    line-height: 40px;
+}
+
+/* CheckBox and radio inline */
+.ba-form .ba-radioInline span, 
+.ba-form .ba-chekInline span {
+    margin-right: 10px;
+}
+
+.ba-form input[type="radio"], 
+.ba-form input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+
+.ba-form .ba-radioMultiple span,
+.ba-form .ba-checkMultiple span {
+    line-height: 36px;
+}
+
+/* Submit button */
+.ba-form .ba-btn-submit:hover,
+input.popup-btn:hover,
+.ba-form .ba-next input[type="button"]:hover,
+.ba-form .ba-prev input[type="button"]:hover {
+    opacity: .8;
+}
+
+.ba-form .ba-btn-submit {
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Calendar */
+.ba-form .ba-date input[type="text"] {
+    border-radius: 2px;
+    border: 1px solid #f3f3f3;
+    box-shadow: none;
+    display: initial;
+    height: 40px;
+}
+
+.ba-form .ba-date.tool .input-append {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ba-form .ba-date.tool .input-append .btn {
+    margin-left: -1px;
+}
+
+.ba-form .icon-calendar:before {
+    content: "\43";
+}
+
+.ba-form .ba-date .btn {
+    background-color: #f1f1f1;
+    background-image: none;
+    border-radius: 0 2px 2px 0;
+    border: 1px solid #e3e3e3;
+    box-shadow: none;
+    color: #333;
+    cursor: pointer;
+    height: 40px;
+    padding: 4px 14px;
+    text-shadow: none;
+}
+
+.ba-form .ba-date .btn:hover, 
+.ba-form .ba-date .btn:focus {
+    background-color: #e6e6e6;
+    outline: none;
+    text-shadow: none;
+}
+
+/* Icons */
+
+.ba-form [class^="icon-"],
+.ba-form [class*=" icon-"] {
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-right: .25em;
+    width: 14px;
+}
+
+.ba-form [class^="icon-"]:before, 
+.ba-form [class*=" icon-"]:before {
+    font-family: 'IcoMoon';
+    font-style: normal;
+    speak: none;
+}
+
+/* Page break */
+
+.ba-form .ba-alert {
+    border: 1px solid #e9322d !important;
+    box-shadow: 0 0 6px #f8b9b7 !important;
+        -webkit-box-shadow: 0 0 6px #f8b9b7 !important;
+        -moz-box-shadow: 0 0 6px #f8b9b7 !important;
+}
+
+.ba-form .ba-next {
+    text-align: right;
+}
+
+.ba-form .ba-prev {
+    float: left;
+}
+
+.ba-form .ba-next input[type="button"],
+.ba-form .ba-prev input[type="button"] {
+    border: none;
+}
+
+/* Send notification */
+
+.ba-form .message {
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
+/* ========================================================================
+    Popup and buttons
+ ========================================================================== */
+
+/* General styles for popup */
+
+.modal-scrollable {
+    bottom: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    left: 0;
+    overflow-y: scroll;
+    margin-right: -17px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1500;
+}
+
+.ba-modal {
+    display: none;
+}
+
+.ba-modal.in {
+    display: block;
+}
+
+.popup-form form {
+    margin: 0;
+}
+
+.popup-form .ba-modal-body {
+    max-height: 600px;
+    padding: 0;
+    width: 98%;
+    position: relative;
+    overflow-y: auto;
+}
+
+.ba-modal.popup-form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 5%;
+    left: 0;
+}
+
+input.popup-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.btn-top {
+    position: fixed;
+    right: 5%;
+    top: 0;
+    z-index: 1000;
+}
+
+/*
+/* Open modal buttons
+*/
+
+.btn-bottom {
+    bottom: 0;
+    position: fixed;
+    right: 5%;
+    z-index: 1000;
+}
+
+.btn-left {
+    left: 0;
+    position: fixed;
+    top: 60%;
+    transform-origin: left top 0;
+    transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+    z-index: 1000;
+}
+
+.btn-right {
+    right: 0;
+    position: fixed;
+    top: 30%;
+    transform-origin: right bottom 0;
+    transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+    z-index: 1000;
+}
+
+/*
+/* Notification modal
+*/
+
+.ba-modal.message-modal {
+    border-radius: 2px;
+    border: transparent;
+    box-shadow: 0 3px 35px rgba(0,0,0,0.3);
+    left: 50%;
+    margin: 0 0 0 -250px;
+    padding: 25px;
+    position: fixed;
+    top: 30% !important;
+    width: 500px;
+    z-index: 1600;
+}
+
+.message-modal .ba-modal-body {
+    text-align: center;
+}
+
+/* ========================================================================
+    Start Responsive
+ ========================================================================== */
+
+@media (max-width: 1200px) {
+
+    /* Submit button */
+    .ba-btn-submit {
+        width: 100% !important;
+    }
+
+    /* Modal */
+    .modal.message-modal,
+    .modal.popup-form {
+        width: auto !important;
+        margin: 0 !important;
+        left: 20px;
+        right: 20px;
+    }
+    
+    .popup-form .modal-body {
+        max-height: 400px !important;
+    }
+}
+
+/* ========================================================================
+    Reset Bootstrap 2 spans to original styles
+ ========================================================================== */
+
+
+ /* Bootstrap dialog */
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.8;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.fade.in {
+    opacity: 1;
+}
+
+.modal-backdrop {
+    background-color: #000;
+    bottom: 0;
+    height: 100% !important;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1040;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.modal.fade {
+    -webkit-transition: opacity .3s linear, top .3s ease-out;
+    -moz-transition: opacity .3s linear, top .3s ease-out;
+    -o-transition: opacity .3s linear, top .3s ease-out;
+    transition: opacity .3s linear, top .3s ease-out;
+}
+
+@media (min-width: 1200px) {
+ 
+    .ba-form .row-fluid [class*="span"] {
+        margin-left: 2.564102564102564%;
+    }
+
+    .ba-form .row-fluid [class*="span"]:first-child {
+        margin-left: 0;
+    }
+
+    .ba-form .row-fluid:before, .row-fluid:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .ba-form .row-fluid:after {
+        clear: both;
+    }
+
+    [class*="span"] {
+        float: left;
+    }
+
+    /* Bootstrap Grid */
+
+    .ba-form .row-fluid .span12 {
+        width: 100%;
+    }
+
+    .ba-form .row-fluid .span11 {
+        width: 91.45299145299145%;
+    }
+
+    .ba-form .row-fluid .span10 {
+        width: 82.90598290598291%;
+    }
+
+    .ba-form .row-fluid .span9 {
+        width: 74.35897435897436%;
+    }
+
+    .ba-form .row-fluid .span8 {
+        width: 65.81196581196582%;
+    }
+
+    .ba-form .row-fluid .span7 {
+        width: 57.26495726495726%;
+    }
+
+    .ba-form .row-fluid .span6 {
+        width: 48.717948717948715%;
+    }
+
+    .ba-form .row-fluid .span5 {
+        width: 40.17094017094017%;
+    }
+
+    .ba-form .row-fluid .span4 {
+        width: 31.623931623931625%;
+    }
+
+    .ba-form .row-fluid .span3 {
+        width: 23.076923076923077%;
+    }
+
+    .ba-form .row-fluid .span2 {
+        width: 14.52991452991453%;
+    }
+
+    .ba-form .row-fluid .span1 {
+        width: 5.982905982905983%;
+    }
+}
