@@ -2,5 +2,5 @@
 
 Web Application for watch store using Joomla CMS approach
 
-See the demostration : [uoc.siyobit.net](uoc.siyobit.net)
+See the demostration : [uoc.siyobit.net](http://uoc.siyobit.net)
 
